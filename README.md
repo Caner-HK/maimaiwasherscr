@@ -38,5 +38,3 @@ GitHub 仓库：[https://github.com/Caner-HK/maimaiwasherscr ](https://github.co
 - 欢迎自行探索玩法，发现了什么骚操作可以提 issue 或 PR 分享一下～
 
 ---
-
-Happy tinkering! 🎉
