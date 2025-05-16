@@ -57,7 +57,7 @@ namespace MyScreensaver
                 float delta = (float)(now - lastFrameTime).TotalSeconds;
                 lastFrameTime = now;
 
-                rotationAngle += delta * 400f; // 每秒30度
+                rotationAngle += delta * 400f; // 旋转速度（此处为400°/s）
                 if (rotationAngle >= 360f) rotationAngle -= 360f;
 
                 Invalidate(); // 请求重绘
@@ -78,7 +78,7 @@ namespace MyScreensaver
         {
             base.OnPaint(e);
             Graphics g = e.Graphics;
-            g.Clear(Color.White);
+            g.Clear(Color.Black);
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             Rectangle clientRect = this.ClientRectangle;
@@ -122,6 +122,11 @@ namespace MyScreensaver
                 g.DrawImage(rotated, bottomRect);
                 rotated.Dispose();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
